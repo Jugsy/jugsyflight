@@ -1,0 +1,54 @@
+defaults
+name 0405073766
+feature AIRMODE
+feature ANTI_GRAVITY
+beeper -GYRO_CALIBRATED
+beeper -DISARMING
+beeper -ARMING
+beeper -ARMING_GPS_FIX
+beeper -ACC_CALIBRATION
+beeper -ACC_CALIBRATION_FAIL
+beeper -READY_BEEP
+beeper -MULTI_BEEPS
+beeper -ARMED
+beeper -SYSTEM_INIT
+beeper -ON_USB
+beeper -BLACKBOX_ERASE
+aux 0 0 0 1500 2100
+aux 1 1 2 900 1350
+aux 2 2 2 1350 1675
+rxfail 3 h
+rxfail 4 h
+rxfail 6 s 1500
+set gyro_sync_denom = 3
+set gyro_notch1_hz = 400
+set gyro_notch2_hz = 200
+set baro_hardware = NONE
+set min_check = 1010
+set max_check = 1990
+set min_throttle = 1050
+set use_unsynced_pwm = OFF
+set failsafe_delay = 10
+set failsafe_off_delay = 10
+set failsafe_throttle = 1100
+set failsafe_procedure = AUTO-LAND
+set small_angle = 180
+set auto_disarm_delay = 0
+profile 0
+
+set p_yaw = 150
+profile 1
+
+profile 2
+
+profile 0
+rateprofile 0
+
+set rc_rate = 105
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 0
+save
+# 
